@@ -10,6 +10,11 @@
       "StackName": "amplify-notifycar-dev-5a9d8",
       "StackId": "arn:aws:cloudformation:us-east-1:424253646477:stack/amplify-notifycar-dev-5a9d8/edcc2eb0-4c79-11ef-abab-0ed8c3b51117",
       "AmplifyAppId": "d3ige4b4lwsrob"
+    },
+    "categories": {
+      "auth": {
+        "notifycar4d07163f": {}
+      }
     }
   }
 }
