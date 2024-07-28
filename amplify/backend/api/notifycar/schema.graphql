@@ -14,7 +14,7 @@ type ListItem @model {
   title: String!
   quantity: Int
   done: Boolean
-  list: List @connection(name: "ListListItems")
+  list: List @hasMany(name: "ListListItems")
   actions: [Action] @hasMany(name: "ListItemAction")
 }
 
