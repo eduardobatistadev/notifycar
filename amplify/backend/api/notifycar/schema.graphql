@@ -6,7 +6,7 @@ type List @model{
   id: ID!
   title: String!
   description: String
-  listItems: [ListItem] @connection(name:"ListListItems")
+  listItems: [ListItem] @hasMany(name:"ListListItems")
 }
 
 type ListItem @model {
@@ -15,11 +15,11 @@ type ListItem @model {
   quantity: Int
   done: Boolean
   list: List @connection(name: "ListListItems")
-  actions: [Action] @connection(name: "ListItemAction")
+  actions: [Action] @hasMany(name: "ListItemAction")
 }
 
 type Action @model {
   id: ID!
   action: String
-  listItem: ListItem @connection(name: "ListItemAction")
+  listItem: ListItem @hasMany(name: "ListItemAction")
 }
